@@ -2,7 +2,7 @@
   "name": "universo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lucasdasilvaoliveira.github.io/universo-nextjs-typescript-pratica/",
+  "homepage": "https://lucasdasilvaoliveira.github.io/typescript-nextjs-universo/",
   "scripts": {
     "dev": "next dev",
     "deploy": "gh-pages -d .next",

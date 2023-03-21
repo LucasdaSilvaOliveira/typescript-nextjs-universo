@@ -1,0 +1,181 @@
+.biografia_container {
+    color: white;
+    background-color: #071242;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.biografia_container h2 {
+    color: #9ca0b6;
+    font-size: 40px;
+    text-shadow: 3px 3px 5px #00000085;
+}
+
+.img {
+    animation: rotate;
+    animation-timing-function: linear;
+    animation-duration: 50000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.planetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+}
+
+.planetas button {
+    border: none;
+    background-color: #071242;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 18px;
+    transition: all 10ms ease-in-out;
+    margin-top: 10px;
+}
+
+.planetas button:hover {
+    color: #a5a589;
+}
+
+.planeta_esquerdo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.planeta_direito {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+}
+
+.tabela_planetas {
+    background-image: linear-gradient(to right, #141449, #070766);
+    border: 3px solid #555a68;
+    border-radius: 10px;
+    width: 60%;
+    padding: 30px 30px;
+    position: fixed;
+    top: 17%;
+    left: 20%;
+}
+
+.tabela_planetas span {
+    background-color: gray;
+    border: 2px solid #070766;
+    border-radius: 100%;
+    padding: 20px 26px;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    transform: translate(30px, -60px);
+}
+
+.tabela_planetas span:hover {
+    background-color: #6d6868;
+}
+
+.tabela_planetas h3 {
+    font-size: 25px;
+    color: #8f98c0;
+    text-shadow: 3px 3px 5px #00000081;
+}
+
+.tabela_planetas p {
+    font-size: 20px;
+    color: #a4a8bb;
+    text-shadow: 3px 3px 5px #00000081;
+}
+
+.tabela_planetas div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 30px;
+    margin: 10px 0px;
+    border-bottom: 1px solid #9093b1;
+}
+
+@media (max-width: 800px) {
+    .planetas {
+        width: 80%;
+    }
+
+    .tabela_planetas {
+        width: 80%;
+        left: 10%;
+        margin: auto;
+    }
+
+    .tabela_planetas h3 {
+        font-size: 22px;
+    }
+
+    .tabela_planetas p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 600px) {
+    .planetas {
+        gap: 25px;
+    }
+
+    .planeta_direito,
+    .planeta_esquerdo {
+        flex-direction: column;
+    }
+
+    .tabela_planetas {
+        top: 10%;
+    }
+
+    .tabela_planetas .img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .tabela_planetas div {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .tabela_planetas .img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tabela_planetas h3 {
+        font-size: 18px;
+    }
+
+    .tabela_planetas p {
+        font-size: 15px;
+    }
+
+    .planetas img {
+       width: 150px;
+       height: 150px;
+    }
+}

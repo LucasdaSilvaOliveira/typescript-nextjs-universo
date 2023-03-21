@@ -1,0 +1,84 @@
+.teoria_container {
+    background-image: url('/img/via-lactea.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+}
+
+.teoria_bg_black {
+    background-color: #00000054;
+    height: 100%;
+    padding: 70px 0px;
+}
+
+.teoria_content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.teoria_content h1 {
+    font-size: 80px;
+    text-shadow: 3px 3px 5px #00000077;
+    color: #b4c6e0;
+}
+
+.teoria_content h2 {
+    font-size: 50px;
+    text-shadow: 3px 3px 5px #00000077;
+    color: #b4c6e0;
+    border-bottom: 1px solid gray;
+}
+
+.teoria_content p {
+    color: #b4c6e0;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px #0000009f;
+}
+
+.via_lactea_bio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.via_lactea_bio div {
+    width: 45%;
+}
+
+.via_lactea_bio p {
+    font-size: 25px;
+}
+
+@media (max-width: 650px) {
+    .teoria_content  h1 {
+        font-size: 55px;
+    }
+    .teoria_content  p {
+        font-size: 20px;
+    }
+    .teoria_content h2 {
+        font-size: 40px;
+    }
+    .via_lactea_bio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .via_lactea_bio div {
+        width: 100%
+    }
+}
+@media (max-width: 400px) {
+    .teoria_content  h1 {
+        font-size: 45px;
+    }
+    .teoria_content  p {
+        font-size: 18px;
+    }
+    .teoria_content h2 {
+        font-size: 35px;
+    }
+}

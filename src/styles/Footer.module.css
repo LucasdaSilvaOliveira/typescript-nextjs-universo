@@ -1,0 +1,22 @@
+.footer_container {
+    background-color: #2c3a58;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 30px;
+    text-shadow: 2px 2px 4px #00000098;
+}
+
+.footer_container div a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.footer_container div a:hover {
+    text-decoration: underline;
+    color: #a5a589;
+}

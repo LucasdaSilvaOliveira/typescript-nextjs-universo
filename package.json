@@ -1,0 +1,26 @@
+{
+  "name": "universo",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://lucasdasilvaoliveira.github.io/universo-nextjs-typescript-pratica/",
+  "scripts": {
+    "dev": "next dev",
+    "deploy": "gh-pages -d out",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "18.15.3",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}

@@ -5,7 +5,7 @@
   "homepage": "https://lucasdasilvaoliveira.github.io/typescript-nextjs-universo/",
   "scripts": {
     "dev": "next dev",
-    "deploy": "gh-pages -d .next",
+    "deploy": "gh-pages -d out",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
